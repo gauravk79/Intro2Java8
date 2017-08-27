@@ -7,7 +7,7 @@ Shortcuts:
 public class Hello {
 
     public static void main(String[] args) {
-        System.out.println("hello world1!");
+        System.out.println("hello world2!");
 
         int myFirstNumber = 5;
         System.out.println(myFirstNumber);
