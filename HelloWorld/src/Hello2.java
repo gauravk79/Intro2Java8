@@ -15,6 +15,7 @@ public class Hello2 {
      int r=2;
      int x=s % r;
      double poundToKg = 0.45359237d;
+     int hello=12;
 
 /*akshit
 mehta
@@ -25,6 +26,7 @@ dsfk
         System.out.println("a is " + (a+1));
         System.out.println(myChar);
         System.out.println(" 150 pounds = " + (150 * poundToKg));
+        System.out.println(hello);
 
     }
 }
