@@ -79,11 +79,11 @@ public class Assignment1 {
             return 4;
         }
     }
-
-        /*
-        Part 5:
-        Write a method called reverse that takes one param called num of type int. The method should return an int whose
-        value is the input number in reverse order.
-        E.g. reverse(432) will return an int of value 234.
-         */
 }
+    /*
+    Part 5:
+    Write a method called reverse that takes one param called num of type int. The method should return an int whose
+    value is the input number in reverse order.
+    E.g. reverse(432) will return an int of value 234.
+     */
+
