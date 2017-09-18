@@ -42,6 +42,9 @@ public class Assignment1 {
         displayHighScorePosition("Jen", 900);
         displayHighScorePosition("Jack", 400);
         displayHighScorePosition("James", 50);
+        int num=234;
+        int reverse=reverse(num);
+        System.out.println("The reverse of " + num + " is: " + reverse);
     }
 
     /*
@@ -63,6 +66,7 @@ public class Assignment1 {
     Jack who scored 400,
     James who scored 50
      */
+
     public static void displayHighScorePosition(String playerName, int score) {
         int position = calulateHighScorePosition(score);
         System.out.println(playerName + " managed to get into position " + position);
@@ -79,7 +83,7 @@ public class Assignment1 {
             return 4;
         }
     }
-}
+
     /*
     Part 5:
     Write a method called reverse that takes one param called num of type int. The method should return an int whose
@@ -87,3 +91,17 @@ public class Assignment1 {
     E.g. reverse(432) will return an int of value 234.
      */
 
+    public static int reverse(int num) {
+        int original = num;
+        int remainder;
+        int reverse = 0;
+        while (original != 0) {
+            remainder = original % 10;
+            reverse = reverse * 10 + remainder;
+            original = original / 10;
+
+        }
+
+        return reverse;
+    }
+}
