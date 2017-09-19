@@ -18,8 +18,21 @@ public class Main {
         calcFeetAndInchesToCentimeters(157);
 
         // 1 inch = 2.54cm  and one foot = 12 inches
-    }
 
+    }
+    public static double calcInchesToCentimeters(int inches){
+        return inches*2.54;
+
+    }
+    public static int calcFeetToInches(int feet){
+        return feet*12;
+    }
+    public static int calcInchesToFeet(int inches){
+        return inches/12;
+    }
+    public static int calcRemainingInches(int inches){
+        return inches%12;
+    }
 
 
     public static double calcFeetAndInchesToCentimeters(int feet, int inches) {
@@ -29,8 +42,11 @@ public class Main {
             return -1;
         }
 
-        double centimeters = (feet * 12) * 2.54;
-        centimeters += inches * 2.54;
+        //double centimeters = (feet * 12) * 2.54;
+        //double centimeters = calcInchesToCentimeters(calcFeetToInches(feet));
+        //centimeters += inches * 2.54;
+        //centimeters  += calcInchesToCentimeters(inches);
+        double centimeters  = calcInchesToCentimeters(calcFeetToInches(feet)) + calcInchesToCentimeters(inches);
         System.out.println(feet + " feet, " + inches + " inches = " + centimeters + " cm");
         return centimeters;
     }
@@ -41,10 +57,10 @@ public class Main {
             return -1;
         }
 
-        int feet = inches / 12;
-        int remainingInches = inches % 12;
-        System.out.println(inches + " inches is equal to " + feet + " feet and " + remainingInches + " inches");
-        return calcFeetAndInchesToCentimeters(feet, remainingInches);
+        //int feet = inches / 12;
+        //int remainingInches = inches % 12;
+        System.out.println(inches + " inches is equal to " + calcFeetToInches(inches) + " feet and " + calcRemainingInches(inches) + " inches");
+        return calcFeetAndInchesToCentimeters(calcInchesToFeet(inches), calcRemainingInches(inches));
     }
 
 
