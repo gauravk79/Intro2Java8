@@ -9,7 +9,16 @@ public class Main {
         Car myCar2 = new Car();
         myCar2.setMake("Toyota");
 
+        Car myCar3 = new Car();
+
+        //print cars make
         System.out.println("myCar1 make is: " + myCar1.getMake());
         System.out.println("myCar2 make is: " + myCar2.getMake());
+        System.out.println("myCar3 make is: " + myCar3.getMake());
+
+        //print cars object
+        System.out.println("myCar1 make is: " + myCar1);
+        System.out.println("myCar2 make is: " + myCar2);
+        System.out.println("myCar3 make is: " + myCar3);
     }
 }
