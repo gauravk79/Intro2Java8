@@ -7,20 +7,25 @@ public class Car {
     private String make;
     private String model;
     private String engine;
-    private String colour;
+    private String color;
 
-    public Car(int doors, int wheels, String make, String model, String engine, String colour) {
+    public Car(int doors, int wheels, String make, String model, String engine, String color) {
+        System.out.println("Constructor with parameters called!");
         this.doors = doors;
         this.wheels = wheels;
         this.make = make;
         this.model = model;
         this.engine = engine;
-        this.colour = colour;
+        this.color = color;
     }
 
     public Car() {
-        this.make = "Audi";
+        this(2,4,"Audi","Rx8","v6","red");
 
+    }
+
+    public Car(String make, String model, String engine, String color) {
+        this(4,4,make,model,engine,color);
     }
 
     public String toString() {
@@ -30,7 +35,7 @@ public class Car {
                 ", make='" + make + '\'' +
                 ", model='" + model + '\'' +
                 ", engine='" + engine + '\'' +
-                ", colour='" + colour + '\'' +
+                ", color='" + color + '\'' +
                 '}';
     }
 
@@ -66,12 +71,12 @@ public class Car {
         this.engine = engine;
     }
 
-    public String getColour() {
-        return colour;
+    public String getColor() {
+        return color;
     }
 
-    public void setColour(String colour) {
-        this.colour = colour;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getMake() {

@@ -1,4 +1,4 @@
-package com.javalearning;
+package com.javalearning.Assignment3;
 
 public class Assignment3 {
 
