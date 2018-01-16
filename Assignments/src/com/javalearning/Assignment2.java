@@ -51,6 +51,20 @@ public class Assignment2 {
             System.out.println();
         }
 
+        /*
+        Part3: Using loops, write code that will output to screen the following:
+        1
+        1 3
+        1 3 5
+        1 3 5 7
+        1 3 5 7 9
+        1 3 5 7
+        1 3 5
+        1 3
+        1
+         */
+
+
     }
 
 }
