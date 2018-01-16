@@ -13,6 +13,15 @@ public class Assignment2 {
          */
 
 
+  for(int j=9;j>=1;j-=2){
+      for(int i=j;i>=1;i-=2){
+
+          System.out.print(i + " ");
+      }
+      System.out.println();
+  }
+
+
         /*
         Part2: Using loops, write code that will output to screen the following:
         2 - - - - -
@@ -23,6 +32,25 @@ public class Assignment2 {
         - - - - - 12
 
          */
+        System.out.println();
+        System.out.println();
+
+        for(int j=2;j<=12;j+=2){
+
+            for(int i=1;i<=6;i+=1){
+
+                if(i*2 == j)
+                    System.out.print(j + " ");
+
+
+                else
+                    System.out.print("- ");
+
+
+            }
+            System.out.println();
+        }
 
     }
+
 }
