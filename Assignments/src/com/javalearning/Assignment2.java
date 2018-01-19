@@ -63,8 +63,28 @@ public class Assignment2 {
         1 3
         1
          */
+        System.out.println();
+        System.out.println();
 
 
+
+        int n = 9;
+
+        for (int i = 1; i < n; i+=2) {
+            for (int j = 1; j <= i; j+=2)
+                System.out.print(j + " ");
+            System.out.println();
+        }
+        for (int i = n; i >= 0; i-=2) {
+            for (int j = 1; j <= i; j+=2)
+                System.out.print(j + " ");
+            System.out.println();
+        }
+        System.out.println();
     }
 
+
+
 }
+
+
